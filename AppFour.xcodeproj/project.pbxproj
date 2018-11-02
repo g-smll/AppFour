@@ -13,6 +13,8 @@
 		67CE3F59218C0DC200A3B432 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CE3F58218C0DC200A3B432 /* TripModel.swift */; };
 		67CE3F5B218C0DF000A3B432 /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CE3F5A218C0DF000A3B432 /* TripFunctions.swift */; };
 		67CE3F5D218C122700A3B432 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CE3F5C218C122700A3B432 /* Data.swift */; };
+		67CE3F61218C18E800A3B432 /* TripsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67CE3F60218C18E800A3B432 /* TripsViewController.storyboard */; };
+		67CE3F65218C19BB00A3B432 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CE3F64218C19BB00A3B432 /* TripsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		67CE3F58218C0DC200A3B432 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		67CE3F5A218C0DF000A3B432 /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
 		67CE3F5C218C122700A3B432 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		67CE3F60218C18E800A3B432 /* TripsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripsViewController.storyboard; sourceTree = "<group>"; };
+		67CE3F64218C19BB00A3B432 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		673FF71A218976CB00D34417 /* AppFour */ = {
 			isa = PBXGroup;
 			children = (
+				67CE3F5E218C186000A3B432 /* Views */,
 				67CE3F56218C0CF500A3B432 /* Model */,
 				673FF71B218976CB00D34417 /* AppDelegate.swift */,
 				673FF722218976CC00D34417 /* Assets.xcassets */,
@@ -81,6 +86,23 @@
 				67CE3F5A218C0DF000A3B432 /* TripFunctions.swift */,
 			);
 			path = Trip;
+			sourceTree = "<group>";
+		};
+		67CE3F5E218C186000A3B432 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67CE3F5F218C186D00A3B432 /* TripsController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67CE3F5F218C186D00A3B432 /* TripsController */ = {
+			isa = PBXGroup;
+			children = (
+				67CE3F60218C18E800A3B432 /* TripsViewController.storyboard */,
+				67CE3F64218C19BB00A3B432 /* TripsViewController.swift */,
+			);
+			path = TripsController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				673FF726218976CC00D34417 /* LaunchScreen.storyboard in Resources */,
+				67CE3F61218C18E800A3B432 /* TripsViewController.storyboard in Resources */,
 				673FF723218976CC00D34417 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +180,7 @@
 				673FF71C218976CB00D34417 /* AppDelegate.swift in Sources */,
 				67CE3F5B218C0DF000A3B432 /* TripFunctions.swift in Sources */,
 				67CE3F5D218C122700A3B432 /* Data.swift in Sources */,
+				67CE3F65218C19BB00A3B432 /* TripsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
