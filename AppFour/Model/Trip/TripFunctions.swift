@@ -14,7 +14,12 @@ class  TripFunction {
     }
     
     static func readTrips(){
-        
+        if Data.tripModels.count == 0 {
+            Data.tripModels.append(TripModel(title: "上海"))
+            Data.tripModels.append(TripModel(title: "北京"))
+            Data.tripModels.append(TripModel(title: "深圳"))
+            Data.tripModels.append(TripModel(title: "云南"))
+        }
     }
     
     
