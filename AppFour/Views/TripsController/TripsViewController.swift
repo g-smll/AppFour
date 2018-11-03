@@ -29,11 +29,15 @@ class TripsViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
+        var cell = tableview.dequeueReusableCell(withIdentifier: "cell");
         
-        cell.textLabel?.text = Data.tripModels[indexPath.row].title
+        if cell == nil{
+            cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
+        }
         
-        return cell
+        cell!.textLabel?.text = Data.tripModels[indexPath.row].title
+        
+        return cell!
     }
 
 }
