@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TripsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TripsViewController: UIViewController {
     
     @IBOutlet weak var tableview: UITableView!
     
@@ -23,6 +23,9 @@ class TripsViewController: UIViewController, UITableViewDataSource, UITableViewD
             self?.tableview.reloadData()
         })
     }
+}
+
+extension TripsViewController:UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Data.tripModels.count
