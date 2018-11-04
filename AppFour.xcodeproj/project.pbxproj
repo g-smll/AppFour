@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		671A975F218E95BA00D2FD06 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671A975E218E95BA00D2FD06 /* Colors.xcassets */; };
 		673FF71C218976CB00D34417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673FF71B218976CB00D34417 /* AppDelegate.swift */; };
 		673FF723218976CC00D34417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 673FF722218976CC00D34417 /* Assets.xcassets */; };
 		673FF726218976CC00D34417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 673FF724218976CC00D34417 /* LaunchScreen.storyboard */; };
@@ -17,9 +18,12 @@
 		67CE3F65218C19BB00A3B432 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CE3F64218C19BB00A3B432 /* TripsViewController.swift */; };
 		67E68A53218DED2A0070E0FA /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E68A52218DED2A0070E0FA /* TripsTableViewCell.swift */; };
 		67E68A56218DF8790070E0FA /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E68A55218DF8790070E0FA /* UIViewExtensions.swift */; };
+		67E68A59218DFB620070E0FA /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E68A58218DFB620070E0FA /* Theme.swift */; };
+		67E68A5B218DFD750070E0FA /* SFNSDisplay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67E68A5A218DFD740070E0FA /* SFNSDisplay.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		671A975E218E95BA00D2FD06 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		673FF718218976CB00D34417 /* AppFour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppFour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		673FF71B218976CB00D34417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		673FF722218976CC00D34417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +36,8 @@
 		67CE3F64218C19BB00A3B432 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		67E68A52218DED2A0070E0FA /* TripsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
 		67E68A55218DF8790070E0FA /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		67E68A58218DFB620070E0FA /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		67E68A5A218DFD740070E0FA /* SFNSDisplay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SFNSDisplay.ttf; path = ../../../../../../System/Library/Fonts/SFNSDisplay.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		673FF71A218976CB00D34417 /* AppFour */ = {
 			isa = PBXGroup;
 			children = (
+				67E68A57218DFB240070E0FA /* Resources */,
 				67E68A54218DF7F80070E0FA /* Extensions */,
 				67CE3F5E218C186000A3B432 /* Views */,
 				67CE3F56218C0CF500A3B432 /* Model */,
@@ -117,6 +124,16 @@
 				67E68A55218DF8790070E0FA /* UIViewExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		67E68A57218DFB240070E0FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67E68A5A218DFD740070E0FA /* SFNSDisplay.ttf */,
+				67E68A58218DFB620070E0FA /* Theme.swift */,
+				671A975E218E95BA00D2FD06 /* Colors.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +194,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				671A975F218E95BA00D2FD06 /* Colors.xcassets in Resources */,
 				673FF726218976CC00D34417 /* LaunchScreen.storyboard in Resources */,
 				67CE3F61218C18E800A3B432 /* TripsViewController.storyboard in Resources */,
 				673FF723218976CC00D34417 /* Assets.xcassets in Resources */,
+				67E68A5B218DFD750070E0FA /* SFNSDisplay.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67E68A53218DED2A0070E0FA /* TripsTableViewCell.swift in Sources */,
+				67E68A59218DFB620070E0FA /* Theme.swift in Sources */,
 				67E68A56218DF8790070E0FA /* UIViewExtensions.swift in Sources */,
 				67CE3F59218C0DC200A3B432 /* TripModel.swift in Sources */,
 				673FF71C218976CB00D34417 /* AppDelegate.swift in Sources */,

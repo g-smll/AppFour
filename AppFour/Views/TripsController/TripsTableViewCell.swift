@@ -18,6 +18,8 @@ class TripsTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         cartView.addShadowAndRoundedCorners()
+        
+        titleLabel.font = UIFont(name: Theme.mainFontName, size: 32)
     }
 
     func setup(tripModel: TripModel) {
