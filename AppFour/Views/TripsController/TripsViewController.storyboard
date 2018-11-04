@@ -52,11 +52,17 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pr8-3C-LAG" customClass="FloatingActionButton" customModule="AppFour" customModuleProvider="target">
+                                <rect key="frame" x="293" y="581" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="icons8-plus-math-26"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mzZ-ve-XWE"/>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="pr8-3C-LAG" id="xHd-p4-8FW"/>
                         <outlet property="tableview" destination="Jfq-ZC-R1k" id="3fw-0p-IOf"/>
                     </connections>
                 </viewController>
@@ -65,4 +71,7 @@
             <point key="canvasLocation" x="-322.39999999999998" y="-40.029985007496258"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-plus-math-26" width="19.5" height="19.5"/>
+    </resources>
 </document>
