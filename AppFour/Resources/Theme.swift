@@ -11,6 +11,6 @@ import UIKit
 class Theme {
     static let mainFontName = "PingFangSC-Regular"
     static let accent = UIColor(named: "Accent")
-    static let Background = UIColor(named: "Background")
-    static let Tink = UIColor(named: "Tink")
+    static let backgroundColor = UIColor(named: "Background")
+    static let tinkColor = UIColor(named: "Tink")
 }
