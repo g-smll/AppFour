@@ -22,6 +22,8 @@ class TripsViewController: UIViewController {
             // completion
             self?.tableview.reloadData()
         })
+        
+        view.backgroundColor = Theme.Background
     }
 }
 

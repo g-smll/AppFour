@@ -20,6 +20,8 @@ class TripsTableViewCell: UITableViewCell {
         cartView.addShadowAndRoundedCorners()
         
         titleLabel.font = UIFont(name: Theme.mainFontName, size: 32)
+        
+        cartView.backgroundColor = Theme.accent
     }
 
     func setup(tripModel: TripModel) {
