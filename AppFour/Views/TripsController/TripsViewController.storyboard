@@ -57,7 +57,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="icons8-plus-math-26"/>
                                 <connections>
-                                    <segue destination="g4w-VB-H0G" kind="presentation" id="6iP-GZ-i6h"/>
+                                    <segue destination="g4w-VB-H0G" kind="presentation" identifier="toAddTripSegue" id="6iP-GZ-i6h"/>
                                 </connections>
                             </button>
                         </subviews>
