@@ -32,7 +32,18 @@ class AddTripViewController: UIViewController {
     }
     
     @IBAction func save(_ sender: Any) {
+        
         TripFunction.createTrip(tripModel: TripModel(title: tripTextField.text!))
+        
+        guard tripTextField.text != "", let _ = tripTextField.text else {
+            //Alternatives
+            tripTextField.layer.borderColor = UIColor.red.cgColor
+            tripTextField.layer.borderWidth = 1
+            tripTextField.layer.cornerRadius = 5
+            tripTextField.placeholder = "旅行地名必填"
+            tripTextField.rightViewMode = .always
+            return
+        }
         
         if let doSave = doSave{
             doSave()
