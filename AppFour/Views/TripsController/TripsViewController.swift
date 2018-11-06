@@ -60,5 +60,35 @@ extension TripsViewController:UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 160
     }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        //get trip model data
+        let tripModel = Data.tripModels[indexPath.row]
+        
+        let delete = UIContextualAction(style: .destructive, title: "Delete") { (contextualAction, view,actionPerformed: @escaping (Bool) -> ()) in
+            //add alert window
+            let alert = UIAlertController(title: "删除旅行", message: "确认删除:\(tripModel.title)", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "取消", style: .cancel, handler: { (alertAction) in
+                actionPerformed(false)
+            }))
+            
+            alert.addAction(UIAlertAction(title: "删除", style: .destructive, handler: { (alertAction) in
+                //actionPerformed(true)
+                // Perform delete
+                TripFunction.deleteTrip(index: indexPath.row)
+                //tableView.reloadData()
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+                
+                actionPerformed(true)
+            }))
+            
+            self.present(alert, animated: true)
+            
+        }
+        
+        return UISwipeActionsConfiguration(actions: [delete])
+    }
 
 }
